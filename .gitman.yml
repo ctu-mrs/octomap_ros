@@ -1,0 +1,78 @@
+location: .gitman
+sources:
+  - repo: https://github.com/OctoMap/octomap_msgs.git
+    name: octomap_msgs
+    rev: ros2
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: octomap_msgs
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/OctoMap/octomap_ros.git
+    name: octomap_ros
+    rev: ros2
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: octomap_ros
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/OctoMap/octomap_rviz_plugins.git
+    name: octomap_rviz_plugins
+    rev: ros2
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: octomap_rviz_plugins
+    scripts:
+      - git submodule update --init --recursive
+sources_locked:
+  - repo: https://github.com/OctoMap/octomap_msgs.git
+    name: octomap_msgs
+    rev: 50eece2bfc2f3163b2fb70b9157356e12d375dff
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: octomap_msgs
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/OctoMap/octomap_ros.git
+    name: octomap_ros
+    rev: 638592f10225e27dac2839a92018d5ea14628120
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: octomap_ros
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/OctoMap/octomap_rviz_plugins.git
+    name: octomap_rviz_plugins
+    rev: 62ea089afc43801d70dd31dd51a1d35b916416a7
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      - source: ''
+        target: octomap_rviz_plugins
+    scripts:
+      - git submodule update --init --recursive
+default_group: ''
+groups:
+  -
